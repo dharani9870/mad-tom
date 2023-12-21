@@ -1,0 +1,121 @@
+.centeredHeading {
+    text-align: center;
+    margin-bottom: 5px; /* Adjust margin as needed */
+}
+
+body {
+    background-color: #d9d9d9;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+#madLibsContainer {
+    background-color: #d9d9d9;
+    color: #000;
+    text-align: center;
+    padding: 7px;
+}
+
+hr {
+    border: 2px solid #000;
+    margin: -7px;
+}
+
+#contentContainer {
+    display: flex;
+}
+
+nav {
+    width: 200px;
+    background-color: #d9d9d9;
+    padding: 20px;
+    border-right: 4px solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content:space-between;
+    height: calc(100vh-40px);
+}
+
+main {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #c7ffd8;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputContainer {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+label {
+    margin-right: 10px;
+    color: #000;
+}
+
+input {
+    padding: 5px;
+}
+
+#generateStoryButton {
+    padding: 10px;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+#storyContainer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #c7ffd8;
+    max-width: 800px;
+    margin: auto;
+}
+
+#storyTitle {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    color: #000;
+    margin: 0 0 10px;
+    white-space:nowrap;
+}
+
+#bottomLine {
+    border-top: 4px solid #000;
+    margin-top: 0px;
+}
+
+.userWord {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.storyFormBox {
+    border: 2px solid #000;
+    padding: 20px;
+    margin-bottom: 20px;
+    max-width: 400px;
+    margin: auto;
+}
+
+.storyContainer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #c7ffd8;
+    max-width: 800px;
+    margin: auto;
+}
+
+.storyBox {
+    border: 2px solid #000;
+    padding: 20px;
+    margin-top: 20px;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <style>
+        body {
+            background-color: #aaf0d1;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        #welcomeText {
+            font-size: 36px;
+            color: #333;
+            text-align: center;
+        }
+
+        #instructionText {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #555;
+        }
+
+        #boxContainer {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .navigationBox {
+            background-color: #fff;
+            padding: 20px;
+            margin: 0 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        #madLibsLink, #tomThumbLink {
+            text-decoration: none;
+            color: #333;
+            font-size: 24px;
+            display: block;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <div id="welcomeText">
+            <h1>WELCOME!!!</h1>
+            <p id="instructionText">Click on the link to navigate</p>
+        </div>
+
+        <div id="boxContainer">
+            <div class="navigationBox" onclick="openPage('assign7_madlibs.html')">
+                <h2>Mad Libs</h2>
+                <a href="#" id="madLibsLink">Go to Mad Libs</a>
+            </div>
+
+            <div class="navigationBox" onclick="openPage('assign7_tomthumb.html')">
+                <h2>Tom Thumb</h2>
+                <a href="#" id="tomThumbLink">Go to Tom Thumb</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openPage(page) {
+            window.location.href = page;
+        }
+    </script>
+
+</body>
+</html>

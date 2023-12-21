@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tom Thumb ImageWorks</title>
+    <link rel="stylesheet" href="assign7t.css">
+</head>
+<body>
+    
+
+    <div id="madLibsContainer">
+        <h1>Assignment 7</h1>
+        <hr>
+    </div>
+
+    <div id="contentContainer">
+        <!-- Navigation Menu -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="assign7_madlibs.html">Mad Libs</a></li>
+                <li><a href="assign7_tomthumb.html">Tom Thumb</a></li>
+                <!-- Add more options as needed -->
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Centered Heading Container -->
+            <div class="centeredHeading">
+                <h2>Tom Thumb</h2>
+            </div>
+            <!-- Tom Thumb Form Box -->
+            <div class="tomThumbFormBox">
+                <form id="tomThumbForm">
+                    <!-- User Input Fields -->
+                    <div class="inputContainer">
+                        <label for="imageWidth">Image Width (px):</label>
+                        <input type="number" id="imageWidth" name="imageWidth" value="0">
+                    </div>
+
+                    <div class="inputContainer">
+                        <label for="imageHeight">Image Height (px):</label>
+                        <input type="number" id="imageHeight" name="imageHeight" value="0">
+                    </div>
+
+                    <div class="inputContainer">
+                        <label for="numColors">Number of Colors:</label>
+                        <input type="number" id="numColors" name="numColors" value="0">
+                    </div>
+
+                    <button type="button" id="calculateButton" onclick="calculateFileSize()">Calculate File Size</button>
+                </form>
+            </div>
+
+            <!-- File Size Display -->
+            <div id="fileSizeDisplay"></div>
+
+            <!-- Story Display -->
+            <div id="storyContainer" style="display: none;">
+                <!-- Story Box -->
+                <div class="storyBox">
+                    <!-- Add your story content here -->
+                    <h2 id="storyTitle"></h2>
+                    <p id="madLibsStory"></p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div id="bottomLine"></div>
+
+    <script src="assign7t.js"></script>
+    <!-- Moved the script link to the end of the body -->
+</body>
+</html>

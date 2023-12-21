@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dharani's Mad Libs</title>
+    <link rel="stylesheet" href="assign7.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    
+
+    <div id="madLibsContainer">
+        <h1>Assignment 7</h1>
+        <hr>
+    </div>
+
+    <div id="contentContainer">
+        <!-- Navigation Menu -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="assign7_madlibs.html">Mad Libs</a></li>
+                <li><a href="assign7_tomthumb.html">Tom Thumb</a></li>
+                <!-- Add more options as needed -->
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Centered Heading Container -->
+            <div class="centeredHeading">
+                <h2>Mad Libs</h2>
+            </div>
+
+            <!-- Story Form Box -->
+            <div class="storyFormBox">
+                <form id="madLibsForm">
+                    <!-- User Input Fields -->
+                    <div class="inputContainer">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" value="Dharani">
+                    </div>
+
+                    <div class="inputContainer">
+                        <label for="character">Character:</label>
+                        <input type="text" id="character" name="character" value="Funny">
+                    </div>
+
+                    <div class="inputContainer">
+                        <label for="adjective">Adjective:</label>
+                        <input type="text" id="adjective" name="adjective" value="Adventurous">
+                    </div>
+
+                    <div class="inputContainer">
+                        <label for="adverb">Adverb:</label>
+                        <input type="text" id="adverb" name="adverb" value="Quickly">
+                    </div>
+
+                    <button type="button" id="generateStoryButton">Tell Story</button>
+                </form>
+            </div>
+
+            <!-- Story Display -->
+            <div id="storyContainer" style="display: none;">
+                <!-- Story Box -->
+                <div class="storyBox">
+                    <h2 id="storyTitle"></h2>
+                    <p id="madLibsStory"></p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div id="bottomLine"></div>
+
+    <script src="assign7.js"></script>
+
+</body>
+</html>
